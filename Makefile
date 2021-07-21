@@ -4,7 +4,7 @@ default:
 test:
 	target/release/rfetch
 clean:
-	rm -rf target/*
+	rm -rf target/* Cargo.lock
 install:
 	sudo cp target/release/rfetch /usr/local/bin/
 uninstall:
