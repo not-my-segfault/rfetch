@@ -2,7 +2,7 @@ default:
 	rm -rf target/*
 	cargo build --release
 test:
-	target/release/rfetch
+	target/*/rfetch
 clean:
 	rm -rf target/* Cargo.lock
 install:

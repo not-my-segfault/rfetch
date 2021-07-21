@@ -9,3 +9,5 @@ description = "simple fetch written in rust"
 
 [dependencies]
 sys-info = "*"
+uptime_lib = "*"
+compound_duration = "*"
