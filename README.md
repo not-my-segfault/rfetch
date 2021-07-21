@@ -6,7 +6,7 @@ simple fetch tool written in rust
 ![](screenshot.png)
 
 ---
-### installation
+### installation:
 to install:
 
 - `make && make install`
@@ -15,6 +15,6 @@ to uninstall:
 
 - `make uninstall`
 
-### dependencies
+### dependencies:
 - cargo
 - rust
