@@ -3,6 +3,8 @@ default:
 	cargo build --release
 test:
 	target/release/rfetch
+clean:
+	rm -rf target/*
 install:
 	sudo cp target/release/rfetch /usr/local/bin/
 uninstall:
