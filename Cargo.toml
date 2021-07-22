@@ -10,3 +10,4 @@ license = "BSD3"
 
 [dependencies]
 sys-info = "*"
+whoami = "*"
