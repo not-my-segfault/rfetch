@@ -17,6 +17,11 @@ to test:
 - `make test`
 
 ### dependencies:
+linux:
+- rustup (that's it!)
+
+windows:
 - rustup
-- for windows compilation, the `x86_64-pc-windows-gnu` toolchain
-  - to install: `rustup target add x86_64-pc-windows-gnu`
+- the `x86_64-pc-windows-gnu` rustup toolchain 
+
+  (to install: `rustup target add x86_64-pc-windows-gnu`)
