@@ -19,8 +19,8 @@ fn info() -> String {
 
 fn main() {
 
-    let user = user();
-    let info = info();
+    let user = user().to_lowercase();
+    let info = info().to_lowercase();
 
     let topstr = format!("=== {} ===", user);
     let topstrlen = topstr.chars().count();
