@@ -12,16 +12,13 @@ fn info() -> String {
     let mem = mem();
     let disk = disk();
     let up = up();
-    let output = format!("{}\n{}\n{}\n{}\n{}", os, cpu, mem, disk, up);
-    
+    let output = format!("{}\n{}\n{}\n{}\n{}", os, cpu, mem, disk, up);    
     output
 }
 
 fn main() {
-
     let user = user().to_lowercase();
     let info = info().to_lowercase();
-
     let topstr = format!("=== {} ===", user);
     let topstrlen = topstr.chars().count();
     let botstr = format!("{}", "=".repeat(topstrlen));
