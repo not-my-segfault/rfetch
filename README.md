@@ -1,5 +1,5 @@
 # rfetch
-simple fetch tool written in rust
+cross platform fetch tool written in rust
 
 ---
 
