@@ -6,15 +6,17 @@ cross platform fetch tool written in rust
 ![](screenshot.png)
 
 ---
-### installation:
-to install:
+### compilation / installation:
+to compile for linux:
+- `make clean linux`
 
-- `make && make install`
-  
-to uninstall:
+to compile for windows:
+- `make clean win`
 
-- `make uninstall`
+to test:
+- `make test`
 
 ### dependencies:
-- cargo
-- rust
+- rustup
+- for windows compilation, the `x86_64-pc-windows-gnu` toolchain
+  - to install: `rustup target add x86_64-pc-windows-gnu`
