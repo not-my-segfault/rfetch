@@ -2,8 +2,8 @@ use std::process::{Command, Stdio};
 use sys_info::os_type;
 
 pub fn up() -> String {
-    if os_type().unwrap() == "Windows" {
-    let output = "up:     n/a"; // ill find a better way one day
+    if os_type().unwrap() != "Linux" {
+    let output = "up:     unsupported"; // ill find a better way one day
     output.to_string()
     } else {
     let uptime = Command::new("uptime")
