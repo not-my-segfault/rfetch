@@ -1,9 +1,9 @@
-default:
-	rm -rf target/*
+linux:
 	cargo build --release
+win:
 	cargo build --release --target x86_64-pc-windows-gnu
 test:
-	target/*/rfetch
+	target/*/rfetch;
 	wine64 target/*/*/rfetch.exe
 clean:
 	rm -rf target/* Cargo.lock
