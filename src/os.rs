@@ -9,9 +9,11 @@ pub fn os() -> String {
         output
     } else {
         let release = os_type().unwrap();
+        let info = os_info::get();
+        let osver = info.version();
         let osname = format!("{}", release);
         let kernel = os_release().unwrap();
-        let output = format!("os:     {}\nkernel: {}", osname, kernel);
+        let output = format!("os:     {} {}\nkernel: {}", osname, osver, kernel);
         output
     }
 }
